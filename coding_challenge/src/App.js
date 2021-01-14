@@ -1,8 +1,13 @@
+import React from 'react'
+import Navbar from './components/Navbar/Navbar'
+import {Box} from '@chakra-ui/react'
 
-function App() {
+const App = () => {
   return (
-    <h1>Hi</h1>
+    <Box bgColor='gray.200'>
+      <Navbar/>
+    </Box>
   );
 }
 
-export default App;
+export default App

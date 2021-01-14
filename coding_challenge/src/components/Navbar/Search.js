@@ -12,7 +12,7 @@ const Search = () => {
             /> */}
             <Flex 
                 as='button'
-                bgColor='green.500' 
+                bgColor='#016450' 
                 justify='center' 
                 width='30%'
                 height='40px'

@@ -4,10 +4,12 @@ import user from '../Assets/user.png'
 
 const UserProfile = ({ name, role }) => {
     return (
-       <Box>
-           <Avatar name={name} src={user}/> 
-           <Heading as='h4'>{name}</Heading>
-           <Text>{role}</Text>
+       <Box textAlign='center' margin={{ md: '20px'}}>
+           <Avatar name={name} src={user} size='2xl'/> 
+           <Box my={{ md: '10px'}}>
+            <Heading fontSize={{ md: '20px'}}>{name}</Heading>
+            <Text>{role}</Text>
+           </Box>
        </Box>
     )
 }

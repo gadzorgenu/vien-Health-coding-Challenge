@@ -1,6 +1,6 @@
 import React from 'react'
 import {Flex, Box, Link,Icon } from '@chakra-ui/react'
-import { HiMenuAlt2 } from "react-icons/hi";
+import { MdSort } from "react-icons/md";
 import Search from './Search'
 
 
@@ -23,7 +23,7 @@ const Navbar = () => {
                             <Link marginRight='100px' >Sell a property</Link>
                     </Flex>
                     <Box as='button'>
-                            <Icon as={HiMenuAlt2}  marginTop='5px' w='30px' h='30px'/>
+                            <Icon as={MdSort}  marginTop='5px' w='30px' h='30px'/>
                     </Box>
                 </Flex>
             </Flex>

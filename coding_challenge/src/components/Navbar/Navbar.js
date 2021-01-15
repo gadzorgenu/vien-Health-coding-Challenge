@@ -1,10 +1,15 @@
-import React from 'react'
-import {Flex, Box, Link,Icon } from '@chakra-ui/react'
-import { MdSort } from "react-icons/md";
+import React, {useState}from 'react'
+import {Flex, Box } from '@chakra-ui/react'
 import Search from './Search'
-
+import MenuButton from '../Button/MenuButton';
+import MenuLinks from './MenuLinks'
+import NavContainer from './NavContainer';
 
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false)
+
+    const toggle = ( ) => setIsOpen(!isOpen)
+
     return (
         /**
          * py= paddingTop and paddingBottom
@@ -13,21 +18,23 @@ const Navbar = () => {
          * h= height
          * bg= background
          */
-
-        <Flex justify='center' bg='white'>
-            <Flex py='15px' w='70%'>
-                <Search/>
-                <Flex marginTop='px' marginLeft='40%' fontSize='12px'>
-                    <Flex marginTop='10px'>
-                            <Link marginRight='20px'> Udwell Now</Link>
-                            <Link marginRight='100px' >Sell a property</Link>
-                    </Flex>
-                    <Box as='button'>
-                            <Icon as={MdSort}  marginTop='5px' w='30px' h='30px'/>
-                    </Box>
-                </Flex>
-            </Flex>
-       </Flex>
+        <NavContainer >
+            <MenuButton toggle={toggle} isOpen={isOpen}/>
+            <Box width={{ md:'100%'}} bg='white'>
+                <MenuLinks isOpen={isOpen}/>
+            </Box>
+        </NavContainer>
+        // <NavContainer >
+        //     <MenuButton toggle={toggle} isOpen={isOpen}/>
+        //     <Flex justify='center' bg='white'>
+        //         <Flex py='15px' >
+        //             <Search/>
+        //         <Flex marginTop='px' marginLeft='40%' fontSize='12px'>
+        //             <MenuLinks isOpen={isOpen}/>
+        //         </Flex>
+        //         </Flex>
+        //     </Flex>
+        // </NavContainer>
     )
 }
 

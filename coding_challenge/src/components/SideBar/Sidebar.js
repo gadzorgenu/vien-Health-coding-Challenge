@@ -84,7 +84,6 @@ const Sidebar = () => {
                   </Box>
                 ))
               }
-              {/* <AboutUser title='Profile'/> */}
               <Box mx={{ md:10}} mt={{ md: 4}}>
                 <Divider orientation='horizontal'/>
                 <Box mt={{ md: 3}}>

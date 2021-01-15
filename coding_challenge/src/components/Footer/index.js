@@ -12,9 +12,9 @@ const Footer = () =>{
                 <Support/>
                 <Address/>
             </Flex>
-            <Flex my={{ md:'40px'}}>
-                <Text>Udwell,LLC. All Rights Reserved. </Text>
-                {/* <Text>Terms &amp Conditions</Text> */}
+            <Flex mt={{ md:'40px'}} justify='center' pb={{ md: 5}}>
+                <Text mr={4}>Udwell,LLC. All Rights Reserved. </Text>
+                <Text mr={4}>{`Terms & Conditions`}</Text>
                 <Text>Privacy Policy</Text>
             </Flex>
         </Box>

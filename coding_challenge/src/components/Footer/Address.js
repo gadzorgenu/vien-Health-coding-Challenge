@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Address = () =>{
     return (
-        <Box>
+        <Box textAlign='justify'>
             <Heading fontSize={{ md:'20px'}} my={{ md: '10px'}}>Address </Heading>
             <Box>
                 <Text  >Counter Delivery, Carter's Beach</Text>

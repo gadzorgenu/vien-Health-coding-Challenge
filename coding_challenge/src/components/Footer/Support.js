@@ -3,7 +3,7 @@ import {Box, Flex, Text,List,ListItem, Link, Heading } from '@chakra-ui/react'
 
 const Support = () =>{
     return (
-        <Box>
+        <Box textAlign='justify'>
             <Heading fontSize={{ md:'20px'}} my={{ md: '10px'}}>Support </Heading>
             <List>
                 <ListItem  >Help Center</ListItem>

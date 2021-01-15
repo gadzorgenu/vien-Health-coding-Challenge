@@ -3,7 +3,7 @@ import {Box, Flex, Text,List,ListItem, Link, Heading } from '@chakra-ui/react'
 
 const About = () =>{
     return (
-        <Box>
+        <Box textAlign='justify'>
             <Heading fontSize={{ md:'20px'}} my={{ md: '10px'}}>About </Heading>
             <List>
                 <ListItem as='a' href='#'>Company</ListItem>

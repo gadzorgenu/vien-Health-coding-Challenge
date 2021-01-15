@@ -74,7 +74,7 @@ const App = () => {
               name='Alex Assenmacher'
               role='Home Buyer'
             />
-            <Button bg="#016450" color='white'>Edit Profile</Button>
+            <Button bg="#016450" color='white' _hover={{ textDecoration: 'none'}}>Edit Profile</Button>
          </Box>
           {/* {
             aboutUser.map((e, item) => (

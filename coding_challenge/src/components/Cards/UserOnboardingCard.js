@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Divider } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 import CardHeader from './CardHeader'
 import { HiOutlineUser } from "react-icons/hi"; 
 import Chart from './Chart'
@@ -14,7 +14,6 @@ const UserOnboardingCard = () => {
             title= 'User Onboarding'
             value='G3 Goal: 8000 User'
             />
-        <Divider orientation='horizontal'/>
         <Chart
             color='#FACF55' 
             value={30}    

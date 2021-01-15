@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Divider } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 import CardHeader from './CardHeader'
 import { HiOutlineUser } from "react-icons/hi"; 
 import Chart from './Chart'
@@ -15,7 +15,6 @@ const TotalSalesCard = () => {
             value='+$985.56'
             color='#34AA44'
             />
-        <Divider orientation='horizontal'/>
         <Chart
             color='#016450' 
             value={80}    

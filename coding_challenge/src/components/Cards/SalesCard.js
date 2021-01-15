@@ -3,7 +3,7 @@ import {Box, Flex, Text, Heading, Progress,Icon } from '@chakra-ui/react'
 
 const SalesCard = () => {
     return (
-        <Box borderRadius='10px' w={{ md: '28%'}} p={{ md: 6}} borderWidth={1}>
+        <Box borderRadius='10px' w={{ md: '28%'}} mr={{ md: '3%'}} p={{ md: 6}} borderWidth={1}>
             <Flex fontSize={{md:'15px'}} justify='space-between'>
                 <Text fontWeight='bold' >Sales</Text>
                 <Text>Monthy Goal</Text>

@@ -4,6 +4,7 @@ import {Box, Grid,GridItem,Text, Flex,Icon,Input, Button} from '@chakra-ui/react
 import UserProfile from './components/SideBar/user-profile'
 import AboutUser from './components/SideBar/about-user'
 import Card from './components/Cards/index'
+import Footer from './components/Footer/index'
 import { HiOutlineUser, FaHands, HiOutlineChatAlt2 } from "react-icons/hi"; 
 import { FaRegCopy } from 'react-icons/fa'
 
@@ -106,6 +107,7 @@ const App = () => {
           <Card />
         </GridItem>
       </Grid>
+          <Footer/>
     </Box>
   );
 }

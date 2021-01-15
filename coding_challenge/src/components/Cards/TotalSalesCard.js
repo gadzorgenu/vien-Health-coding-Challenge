@@ -7,7 +7,7 @@ import Chart from './Chart'
 
 const TotalSalesCard = () => {
     return (
-       <Box borderRadius='10px' borderWidth={1}  w={{ md: '30%'}} mr={12}>
+       <Box borderRadius='10px' borderWidth={1}  w={{ xs:'20%',sm: "100% ", md:'70%',xl: '40%'}} mb={{ sm:5}}  mr={12}>
            <CardHeader 
             bgColor='#016450' 
             icon={HiOutlineUser} 

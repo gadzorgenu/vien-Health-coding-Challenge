@@ -11,7 +11,7 @@ const CardHeader = ({ icon, title, value, bgColor, color, my, mr }) => {
                         <Icon as={icon} color='white'/>
                     </Box>
                     <Box>
-                        <Heading fontSize={{ md:'15px'}} my={my} >{title}</Heading>
+                        <Text fontWeight='bold' fontSize={{ md:'15px'}} my={my} >{title}</Text>
                         <Text fontSize={{ md:'11px'}} color={color}>{value}</Text>
                     
                     </Box>

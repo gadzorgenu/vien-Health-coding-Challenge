@@ -1,12 +1,12 @@
 import React from 'react'
-import {Box, Flex, Text, Link, Heading } from '@chakra-ui/react'
+import {Box, Flex, Text} from '@chakra-ui/react'
 import About from './About'
 import Support from './Support'
 import Address from './Address'
  
 const Footer = () =>{
     return (
-        <Box textAlign='center' mx={{ md: '20%'}}>
+        <Box textAlign='center' mx={{md: '20%'}}>
             <Flex justify='space-between'>
                 <About />
                 <Support/>

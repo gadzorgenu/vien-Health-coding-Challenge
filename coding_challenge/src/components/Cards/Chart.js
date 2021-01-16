@@ -5,8 +5,7 @@ const Chart = ({ color, value, amount, status, number, state})=> {
     return (
         <Flex m={5}>
             <CircularProgress value={value} size="150px" color={color} thickness="15px" />
-            <Spacer/>
-            <Box p={4}>
+            <Box p={4} ml={{sm:4, md: 8}}>
                 <Box>
                     <Text fontWeight='bold' fontSize={{ md: '20px'}}>{amount}</Text>
                     <Text fontSize={{ md: '13px'}} textAlign='right'> {status}</Text>

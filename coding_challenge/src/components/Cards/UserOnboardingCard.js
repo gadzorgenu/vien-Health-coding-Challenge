@@ -7,7 +7,7 @@ import Chart from './Chart'
 
 const UserOnboardingCard = () => {
     return (
-       <Box borderRadius='10px' borderWidth={1}  w={{ sm: "100%",md:'70%', xl: '40%'}} mt={{ sm:'5%', md:0, xl:0 }} mr={12}>
+       <Box borderRadius='10px' borderWidth={1}   w={{ xs:'20%',sm: "50% ", md:'70%',xl: '40%'}}  mt={{xs:4 ,sm:4, md:0, }}>
            <CardHeader 
             bgColor='#FACF55' 
             icon={HiOutlineUser} 

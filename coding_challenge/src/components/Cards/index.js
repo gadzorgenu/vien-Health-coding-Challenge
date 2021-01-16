@@ -1,11 +1,11 @@
 import React from 'react'
-import {Box, Flex, Grid,Progress } from '@chakra-ui/react'
+import {Box, Flex, Grid,Image,Progress } from '@chakra-ui/react'
 import TotalSalesCard from './TotalSalesCard'
 import DailyProfitCard from './DailyProfitCard'
 import UserOnboardingCard from './UserOnboardingCard'
 import DailyActiveCard  from './DailyActiveCard'
 import CardInfo from './Card'
-// import Chart from 'chart.js'
+import barGraph from '../Assets/User Menu/Icons 24/barGraph.png'
      
 const Card = () => {
 
@@ -27,6 +27,7 @@ const Card = () => {
                     value='$13,893'          
                     percentage='+11.3%'
                     color='#FF8433'      
+                    chart={<Image src={ barGraph}/>}
                 />
                 <CardInfo
                      title='Clients'
@@ -38,7 +39,7 @@ const Card = () => {
                      chart= {<Progress colorScheme="green" size="sm" value={60} rounded='lg' />}
                 />
             </Grid>
-            <Flex mx={{ md: '35px'}} direction={{ xs:'column',sm: "column", xl : "row"}} mt={{ md: '3%'}}>
+            <Flex mx={{ md: '35px'}} direction={{ sm: "column", xl : "row"}} mt={{ md: '3%'}}>
                 <TotalSalesCard />
                 <DailyProfitCard/>
             </Flex>

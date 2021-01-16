@@ -21,3 +21,15 @@ const NavContainer = ({ children, ...props}) => {
 }
 
 export default NavContainer
+
+{/* <NavContainer >
+        //     <MenuButton toggle={toggle} isOpen={isOpen}/>
+        //     <Flex justify='center' bg='white'>
+        //         <Flex py='15px' >
+        //             <Search/>
+        //         <Flex marginTop='px' marginLeft='40%' fontSize='12px'>
+        //             <MenuLinks isOpen={isOpen}/>
+        //         </Flex>
+        //         </Flex>
+        //     </Flex>
+        // </NavContainer> */}

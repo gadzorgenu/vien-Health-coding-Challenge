@@ -6,7 +6,7 @@ import Card from './components/Cards/index'
 import Footer from './components/Footer/index'
 
 const App = () => {
-
+    document.title = 'Coding Challenge'
   return (
     <Box bgColor='gray.200'>
       <Navbar/>

@@ -1,5 +1,5 @@
 import React, {useState}from 'react'
-import {Flex, Box } from '@chakra-ui/react'
+import { Input,Flex, Text} from '@chakra-ui/react'
 import Search from './Search'
 import MenuButton from '../Button/MenuButton';
 import MenuLinks from './MenuLinks'
@@ -20,9 +20,14 @@ const Navbar = () => {
          */
         <NavContainer >
             <MenuButton toggle={toggle} isOpen={isOpen}/>
-            <Box width={{ md:'100%'}} bg='white'>
-                <MenuLinks isOpen={isOpen}/>
-            </Box>
+            <Flex>
+                <Input placeholder='search'  justify={{ base:'center'}} />
+                <Flex>
+                    <Text> Udwell Now</Text>
+                    <Text>Sell a property</Text>
+                </Flex>
+                {/* <MenuLinks isOpen={isOpen}/> */}
+            </Flex>
         </NavContainer>
         // <NavContainer >
         //     <MenuButton toggle={toggle} isOpen={isOpen}/>

@@ -8,10 +8,11 @@ const NavContainer = ({ children, ...props}) => {
             align='center'
             justify='space-between'
             wrap='wrap'
-            w={8}
-            p={8}
-            bg={['white,white']}
-            // color={['','white']}
+            w='100%'
+            py={4}
+            px={10}
+            bg={['white', 'white']}
+            color={['black','black']}
             {...props}
         >
             {children}

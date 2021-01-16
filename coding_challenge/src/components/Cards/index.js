@@ -5,6 +5,7 @@ import DailyProfitCard from './DailyProfitCard'
 import UserOnboardingCard from './UserOnboardingCard'
 import DailyActiveCard  from './DailyActiveCard'
 import CardInfo from './Card'
+// import Chart from 'chart.js'
      
 const Card = () => {
 

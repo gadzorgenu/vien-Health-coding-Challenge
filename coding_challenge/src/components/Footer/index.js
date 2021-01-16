@@ -14,7 +14,7 @@ const Footer = () =>{
                 <Address/>
             </Flex>
             <Flex mt={{ md:'40px'}} justify='center' pb={{ md: 5}}>
-                <Icon as={ FaRegCopyright}/>
+                <Icon as={ FaRegCopyright} mt={1}/>
                 <Text mr={4}>Udwell,LLC. All Rights Reserved. </Text>
                 <Text mr={4}>{`Terms & Conditions`}</Text>
                 <Text>Privacy Policy</Text>

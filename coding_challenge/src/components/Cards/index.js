@@ -1,21 +1,41 @@
 import React from 'react'
-import {Box, Flex, Grid } from '@chakra-ui/react'
-import SalesCard from './SalesCard'
-import ClientCard from './ClientCard'
-import RevenueCard from './RevenueCard'
+import {Box, Flex, Grid,Progress } from '@chakra-ui/react'
 import TotalSalesCard from './TotalSalesCard'
 import DailyProfitCard from './DailyProfitCard'
 import UserOnboardingCard from './UserOnboardingCard'
 import DailyActiveCard  from './DailyActiveCard'
+import CardInfo from './Card'
      
 const Card = () => {
 
     return (
         <Box padding='15px'>
             <Grid justify='center' w={{ md:'33 33 33'}} templateColumns={{sm: 'repeat(1, 1fr)', lg: 'repeat(3, 1fr)'}} gap={4}>
-                <SalesCard />
-                <RevenueCard />
-                <ClientCard />
+                <CardInfo
+                     title='Sales'
+                     label='Monthly Goal'
+                     value='98.1%'
+                     percentage='+6.9%'
+                     color='#348373'
+                     duration='Yearly Goal'
+                     chart= {<Progress colorScheme="green" size="sm" value={60} rounded='lg' />}
+                />
+                <CardInfo
+                    title='Revenue'
+                    label='Total Profit'
+                    value='$13,893'          
+                    percentage='+11.3%'
+                    color='#FF8433'      
+                />
+                <CardInfo
+                     title='Clients'
+                     label='Subscribed'
+                     value='1,232'
+                     percentage='+3.2%'
+                     color='#348373'
+                     duration='Yearly Goal'
+                     chart= {<Progress colorScheme="green" size="sm" value={60} rounded='lg' />}
+                />
             </Grid>
             <Flex mx={{ md: '35px'}} direction={{ xs:'column',sm: "column", xl : "row"}} mt={{ md: '3%'}}>
                 <TotalSalesCard />
